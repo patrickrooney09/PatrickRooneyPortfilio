@@ -1,0 +1,51 @@
+body{
+  background-color: black;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+  margin:10px;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.hidden{
+  opacity: 0;
+  filter:blur(5px);
+  transform: translateX(-100%);
+  transition: all 3s;
+
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.projects{
+  display:flex
+}
+
+.project:nth-child(2){
+  transition-delay: 400ms;
+}
+
+
