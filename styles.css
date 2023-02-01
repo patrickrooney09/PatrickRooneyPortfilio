@@ -16,6 +16,11 @@ section{
   margin:10px;
 }
 
+.img-links{
+  width: 200px;
+  height: 200px;
+  margin:15px;
+}
 span {
   border-right: .05em solid;
   animation: caret 1s steps(1) infinite;
@@ -25,13 +30,20 @@ span {
     border-color: transparent;
   }
 }
+a{
+  color: white
+}
 
+iframe{
+  width:1000px;
+  height:800px;
+  border-radius: 10px;
+}
 .hidden{
   opacity: 0;
   filter:blur(5px);
   transform: translateX(-100%);
   transition: all 3s;
-
 }
 
 .show{
@@ -48,4 +60,8 @@ span {
   transition-delay: 400ms;
 }
 
+#links{
+  display: flex
+
+}
 
