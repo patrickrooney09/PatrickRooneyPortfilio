@@ -15,14 +15,18 @@ body{
   padding-top:110px;
 }
 
+#intro{
+  margin-top: -100px;
+}
 #my-story{
-  padding:250px;
+  padding:200px;
   padding-bottom: 500px;
   min-height:50vh;
   background-image: url('liam-mcgarry-ebsrin6WqxQ-unsplash.jpg');
   background-repeat: no-repeat;
   background-size:contain;
-  font-size: 20px;
+  font-size: 22px;
+  text-shadow: rgb(10, 10, 9) 2px 0 1px;
 
 }
 header{
