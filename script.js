@@ -10,13 +10,13 @@ const observer = new IntersectionObserver((entries)=>{
 
 
 const hiddenElements = document.querySelectorAll(".hidden")
-hiddenElements.forEach((el)=> observer.observe(el)) 
+hiddenElements.forEach((el)=> observer.observe(el))
 
 
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "hello.", "my name is patrick rooney.", "here are my projects."];
+  var dataText = [ "hello!", "my name is patrick rooney.", "im an actor turned software engineer.", "here are my projects."];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded',function(event){
       // wait for a while and call this function again for next character
       setTimeout(function() {
         typeWriter(text, i + 1, fnCallback)
-      }, 100);
+      }, 90);
     }
     // text finished, call callback if there is a callback function
     else if (typeof fnCallback == 'function') {
       // call callback after timeout
-      setTimeout(fnCallback, 700);
+      setTimeout(fnCallback, 100);
     }
   }
   // start a typewriter animation for a text in the dataText array
